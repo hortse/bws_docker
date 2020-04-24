@@ -5,7 +5,4 @@ sudo systemctl enable docker
 sudo systemctl start docker
 sudo apt-get -y install python3-pip
 sudo pip3 install pyopenssl docker-compose
-sudo mkdir -p /opt/wordpress
-cd /opt/wordpress
-sudo chmod -R 777 /opt/wordpress
 sudo docker-compose up -d
