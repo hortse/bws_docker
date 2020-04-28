@@ -1,7 +1,7 @@
 #!/bin/bash
 #Docker Wordpress environment v0.1
 STARTDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-if [ ! $1 || $1 == "install" || $1 == "remove" || $1 == "start" || or $1 == "stop" || $1 == "info" || "uninstall" || "help"]
+if [ ! $1 ] || [ $1 == "install" ] || [ $1 == "remove" ] || [ $1 == "start" ] || [ $1 == "stop" ] || [ $1 == "info" ] || [ $1 = "uninstall" ] || [ $1 = "help" ]
 then
         echo "Usage : install | remove | start | stop | info | uninstall | help"
         exit
