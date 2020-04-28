@@ -105,7 +105,7 @@ sudo docker container stop $(sudo docker container ls -aq)
 sudo docker container rm $(sudo docker container ls -aq)
 sudo docker system prune	
 sudo apt-get -y remove docker.io
-sudo pip uninstall -y pyopenssl docker-compose
+sudo pip3 uninstall -y pyopenssl docker-compose
 sudo apt-get remove python3-pip
 
 else
