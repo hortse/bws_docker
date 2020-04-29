@@ -18,10 +18,10 @@ Docker scripts for BWS developers
 6. По умолчанию настройки имеют вид:
 	-для БД
 	MYSQL_ROOT_PASSWORD: rootPassword
-        MYSQL_DATABASE: wordpress
-        MYSQL_USER: wp-user
+	MYSQL_DATABASE: wordpress	
+        MYSQL_USER: wp-user	
         MYSQL_PASSWORD: wp-pass
-        порт: 8889
+	порт: 8889
 
 	-для  phpmyadmin:
 	MYSQL_USER: wp-user
