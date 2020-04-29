@@ -17,21 +17,21 @@ Docker scripts for BWS developers
 5. Пароли и порты на которых слушают сервисы настраиваются в файле docker-compose.yml. Можете настроить их по своему усмотрению, не забывая, что для успешного запуска контейнера, сконфигурированный порт должен быть свободен в родительской операционной системе.
 6. По умолчанию настройки имеют вид:
 	-для БД
-	MYSQL_ROOT_PASSWORD: rootPassword
-	MYSQL_DATABASE: wordpress	
-        MYSQL_USER: wp-user	
-        MYSQL_PASSWORD: wp-pass
-	порт: 8889
+	MYSQL_ROOT_PASSWORD: rootPassword ;
+	MYSQL_DATABASE: wordpress ;	
+        MYSQL_USER: wp-user ;	
+        MYSQL_PASSWORD: wp-pass ;
+	порт: 8889 
 
 	-для  phpmyadmin:
-	MYSQL_USER: wp-user
-        MYSQL_PASSWORD: wp-pass
-        MYSQL_ROOT_PASSWORD: rootPassword
+	MYSQL_USER: wp-user ;
+        MYSQL_PASSWORD: wp-pass ;
+        MYSQL_ROOT_PASSWORD: rootPassword ;
     	порт: 3001
 
 	-для сайта:
-	WORDPRESS_DB_USER: wp-user
-        WORDPRESS_DB_PASSWORD: wp-pass
+	WORDPRESS_DB_USER: wp-user ;
+        WORDPRESS_DB_PASSWORD: wp-pass ;
 	порт: 8880
 7. Для остановки контейнеров выполните команду:
 	$> sudo ./run.sh stop
