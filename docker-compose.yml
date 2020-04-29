@@ -41,8 +41,7 @@ services:
       - db
     image: wordpress:latest
     ports:
-      - 80:80
-      - 443:443
+      - 8880:80
     environment:
        WORDPRESS_DB_HOST: db
        WORDPRESS_DB_USER: wp-user
