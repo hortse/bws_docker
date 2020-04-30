@@ -47,7 +47,7 @@ echo "In order to connect website use following ports:"
 sudo docker inspect --format='{{range $p, $conf := .NetworkSettings.Ports}} {{$p}} -> {{(index $conf 0).HostPort}} {{end}}'  wordpress-site
 echo "-----------------"
 echo "In order to connect phpmyadmin use following ports:"
-sudo docker inspect --format='{{range $p, $conf := .NetworkSettings.Ports}} {{$p}} -> {{(index $conf 0).HostPort}} {{end}}'  bws_docker_phpmyadmin_1
+sudo docker inspect --format='{{range $p, $conf := .NetworkSettings.Ports}} {{$p}} -> {{(index $conf 0).HostPort}} {{end}}'  bws_docker_wp_phpmyadmin_1
 echo "-----------------"
 fi
 ;;
@@ -88,7 +88,7 @@ echo "In order to connect website use following ports:"
 sudo docker inspect --format='{{range $p, $conf := .NetworkSettings.Ports}} {{$p}} -> {{(index $conf 0).HostPort}} {{end}}'  wordpress-site
 echo "-----------------"
 echo "In order to connect phpmyadmin use following ports:"
-sudo docker inspect --format='{{range $p, $conf := .NetworkSettings.Ports}} {{$p}} -> {{(index $conf 0).HostPort}} {{end}}'  bws_docker_phpmyadmin_1
+sudo docker inspect --format='{{range $p, $conf := .NetworkSettings.Ports}} {{$p}} -> {{(index $conf 0).HostPort}} {{end}}'  bws_docker_wp_phpmyadmin_1
 echo "-----------------"
 fi
 ;;
